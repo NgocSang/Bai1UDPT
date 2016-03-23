@@ -140,3 +140,35 @@ h1{
 {
 	display:block;
 }
+#NoiDung{
+	max-width:100%;
+	height:auto;
+	
+}
+	
+#NoiDung > #Menuleft{
+	display:block;
+	float:left;
+	width:17%;
+	height:auto;
+	border:1px solid #000000;
+	border-radius:10px;
+	margin-right:10px;
+	background:#D7CCC8;
+	
+
+}
+
+#NoiDung > #Menuleft > ul{
+	padding-left:0px;
+}
+#NoiDung > #Menuleft > ul > li{
+	padding:10px 0 0 10px; 
+	border-bottom:1px solid #000000;
+}
+#NoiDung > #Menuleft > ul > li:hover {
+	background:#FFFFFF;
+}
+#NoiDung > #Menuleft > ul > li > a:hover {
+	color:#000000;
+}
