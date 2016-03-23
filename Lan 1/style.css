@@ -19,7 +19,70 @@ a{
 	padding: 10px 0px;
 	color: #FFFFFF;
 }
- #Menu > ul > .Menu1{
+
+h1{
+	
+	letter-spacing: .1em;
+	text-shadow: 
+	  -1px -1px 1px #111, 
+	  2px 2px 1px #ABABAB;
+	font-family:serif;
+}
+#Menu{
+	
+	 max-width:100%;
+	 height:50px;
+	 background:#F2F2F2;
+	 position:relative;
+	 color:#FFFFFF;
+	 
+	 
+}
+.MenuCap1 {
+	display:none;
+	margin-top:10px;
+	
+}
+#Menuleft{
+	display:none;
+}
+@media screen and (max-width: 700px) {
+	#Menu > ul > li {
+		display:none;
+		margin-top:10px;
+		
+	}
+	#Menu > ul {
+		max-width:100%;
+		height:auto;
+		border-bottom:none;
+		background:#F2F2F2;
+	}
+	#Menu > ul > .Menu1{
+		display:block;
+		padding-top:15px;
+	}
+	#Menu > ul:hover li{
+		display:block;
+	}
+	.MenuCap1 > li{
+		margin-top:10px;
+	}
+	button{
+		background:url(images/menu-128.png);
+		height:35px;
+		width:35px;
+		cursor:pointer;
+		position:absolute;
+		right:20px;
+		top:10px;
+	}	
+}
+ @media screen and (min-width: 700px) {
+	 #Menu > button{
+		display:none;
+	 }
+	 #Menu > ul > .Menu1{
 		display:none;
 	 }
 	#Menu > ul > li{
@@ -64,30 +127,8 @@ a{
 		position:relative;
 		top:-20px;
 	}
-h1{
-	
-	letter-spacing: .1em;
-	text-shadow: 
-	  -1px -1px 1px #111, 
-	  2px 2px 1px #ABABAB;
-	font-family:serif;
-}
-#Menu{
-	
-	 max-width:100%;
-	 height:50px;
-	 background:#F2F2F2;
-	 position:relative;
-	 color:#FFFFFF;
-	 
-	 
-}
-.MenuCap1 {
-	display:none;
-	margin-top:10px;
-	
-}
-.icon{
+ }
+ .icon{
 	width:15px;
 	height:15px;
 }
