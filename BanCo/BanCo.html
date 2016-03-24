@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<title>BÀN CỜ VUA</title>
+		<meta charset="utf-8"/>
+        <script src="jquery.js"></script>
+		<link rel ="stylesheet" href="css_menu.css"/>
+	</head>
+   <body>
+    <h1>BÀN CỜ VUA</h1>
+    <div id="content">
+        <div class="chessboard">
+            <!-- hàng 1-->
+            <div class="white">&#9820;</div>
+            <div class="black">&#9822;</div>
+            <div class="white">&#9821;</div>
+            <div class="black">&#9819;</div>
+            <div class="white">&#9818;</div>
+            <div class="black">&#9821;</div>
+            <div class="white">&#9822;</div>
+            <div class="black">&#9820;</div>
+            <!--hàng 2-->
+            <div style="clear:left;" class="black">&#9817;</div>
+            <div class="white">&#9817;</div>
+            <div class="black">&#9817;</div>
+            <div class="white">&#9817;</div>
+            <div class="black">&#9817;</div>
+            <div class="white">&#9817;</div>
+            <div class="black">&#9817;</div>
+            <div class="white">&#9817;</div>
+
+            <!--hàng 3-->
+            <div style="clear:left;" class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+
+            <!--hàng 4-->
+            <div style="clear:left;" class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+
+            <!--hàng 5-->
+            <div style="clear:left;" class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <!--hàng 6-->
+            <div style="clear:left;" class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <!--hàng 7-->
+            <div style="clear:left;" class="white">&#9817;</div>
+            <div class="black">&#9817;</div>
+            <div class="white">&#9817;</div>
+            <div class="black">&#9817;</div>
+            <div class="white">&#9817;</div>
+            <div class="black">&#9817;</div>
+            <div class="white">&#9817;</div>
+            <div class="black">&#9817;</div>
+            <!--hàng 8-->
+            <div style="clear:left;" class="black">&#9814;</div>
+            <div class="white">&#9816;</div>
+            <div class="black">&#9815;</div>
+            <div class="white">&#9813;</div>
+            <div class="black">&#9812;</div>
+            <div class="white">&#9815;</div>
+            <div class="black">&#9816;</div>
+            <div class="white">&#9814;</div>
+
+        </div> <!--đóng chessboard-->
+    </div>
+    <script>
+        window.addEventListener("resize", function () {
+            var wid = $('.white').css('width');
+            $('.white').css('height', wid);
+            var wid1 = $('.black').css('width');
+            $('.black').css('height', wid1);
+            var test = parseInt(wid1) / 2;
+            test = test + 'px';
+            $('.white').css('font-size', test);
+            $('.black').css('font-size', test);
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	text-align: 20%;
+	resize: both;
+	
+}
+#content {
+	width: 80%;
+	height:600px;
+	margin:auto;
+	float:left;
+}
+.chessboard{
+	width: 50%;
+	height:450px;
+	margin:auto;
+	
+}
+
+.black{
+	float: left;
+	width:10%;
+	height: 50px;
+	background-color: #808080;
+	font-size: 30px;
+	text-align: center;
+	border: 0.5px solid #333;
+
+}
+
+.white{
+	float: left;
+	width:10%;
+	height: 50px;
+	background-color: #FFFFFF;
+	font-size: 30px;
+	text-align: center;
+	border: 0.5px solid #333;
+
+	
+}
