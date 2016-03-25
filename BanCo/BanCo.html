@@ -1,15 +1,73 @@
-<!DOCTYPE html>
-<html lang="vi">
-	<head>
-		<title>BÀN CỜ VUA</title>
-		<meta charset="utf-8"/>
-        <script src="jquery.js"></script>
-		<link rel ="stylesheet" href="css_menu.css"/>
-	</head>
-   <body>
-    <h1>BÀN CỜ VUA</h1>
-    <div id="content">
-        <div class="chessboard">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css_menu.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon"  type="image/x-icon" href="images/icon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery.js"></script>
+    <title>Website nhóm 2S</title>
+</head
+
+><body>
+	<div id="Banner">
+        <center><h1>Chào mừng bạn đã đến với website của nhóm 2S</h1></center>
+    </div>
+	<div id="Menu">
+    	<ul>
+       	<li class="Menu1"><a href="#"> Menu</a></li>
+        	<li>
+            	<img class="icon" src="images/home.png"/><a href="Source.html">Trang chủ</a>
+                
+            </li>
+            <li>
+            	<img class="icon" src="images/member.png"/>
+                    <a href="#">Thành viên</a>
+                    <img src="images/incon_menu.png"/>
+                    <ul class="MenuCap1">
+                        <li>
+                            <div>
+                                <img src="images/avtar_NS.png"/><a href="./members/1312485/1312485.html">Nguyễn Ngọc Sáng</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="images/avtar_ST.png"/><a href="./members/1312498/1312498.html">Trần Thị Sương</a>
+                            </div>
+                        </li>
+                    </ul>
+            </li>
+            <li>
+            	<img class="icon" src="images/study.png"/><a href="#">Bài tập</a>
+                <img src="images/incon_menu.png"/>
+                <ul class="MenuCap1">
+                        <li><a href="BanCo.html">Bàn cờ</a></li>
+                        <li><a href="BCK.html">Bảng cửu chương</a></li>
+                  </ul>
+            </li>
+            <li>
+            	<img class="icon" src="images/references.png"/><a href="#">Tài liệu</a>
+                <img src="images/incon_menu.png"/>
+            </li>
+        </ul>
+        <button id="btnMenu" type="button"></button>
+    </div>
+    <img id="page1" src="images/Banner.jpg" alt="Banner"/>
+    <div id="NoiDung">
+    	<div id="Menuleft">
+        	<center><h3>DANH MỤC</h3></center>
+            <hr width="100%"/>
+        	<ul>
+            	<li><a href="#">Nguyễn Ngọc Sáng</a></li>
+                <li><a href="#">Trần Thị Sương</a></li>
+                <li><a href="BCK.html">Bảng cửu chương</a></li>
+                <li style="border:none;"><a href="BanCo.html">Bàn cờ</a></li>
+            </ul>
+        </div>
+        <div id ="ND">
+        	 <center><h1>BÀN CỜ VUA</h1></center>
+            <div id="content">
+            <div class="chessboard">
             <!-- hàng 1-->
             <div class="white">&#9820;</div>
             <div class="black">&#9822;</div>
@@ -28,7 +86,7 @@
             <div class="white">&#9817;</div>
             <div class="black">&#9817;</div>
             <div class="white">&#9817;</div>
-
+            
             <!--hàng 3-->
             <div style="clear:left;" class="white"></div>
             <div class="black"></div>
@@ -38,7 +96,7 @@
             <div class="black"></div>
             <div class="white"></div>
             <div class="black"></div>
-
+            
             <!--hàng 4-->
             <div style="clear:left;" class="black"></div>
             <div class="white"></div>
@@ -48,7 +106,7 @@
             <div class="white"></div>
             <div class="black"></div>
             <div class="white"></div>
-
+            
             <!--hàng 5-->
             <div style="clear:left;" class="white"></div>
             <div class="black"></div>
@@ -85,21 +143,32 @@
             <div class="white">&#9815;</div>
             <div class="black">&#9816;</div>
             <div class="white">&#9814;</div>
-
-        </div> <!--đóng chessboard-->
-    </div>
-    <script>
-        window.addEventListener("resize", function () {
+            
+            </div> <!--đóng chessboard-->
+            </div>
+            <script>
+            window.addEventListener("resize", function () {
             var wid = $('.white').css('width');
             $('.white').css('height', wid);
             var wid1 = $('.black').css('width');
             $('.black').css('height', wid1);
+            
             var test = parseInt(wid1) / 2;
+            var wid3 = parseInt(wid1) * 8;
             test = test + 'px';
+            wid3 = wid3 + 'px';
+            $('.chessboard').css('height', wid3);
             $('.white').css('font-size', test);
             $('.black').css('font-size', test);
-        });
-
-    </script>
+            
+            
+            });
+            
+            </script>
+        </div>
+        <div id="footer">
+        	
+        </div>
+    </div>
 </body>
 </html>
