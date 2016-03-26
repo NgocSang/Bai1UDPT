@@ -2,7 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
     <link rel="shortcut icon"  type="image/x-icon" href="images/icon.ico"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website nhóm 2S</title>
@@ -65,20 +67,32 @@
         </div>
         <div id = "ND">
         	<center><h1>Liên hệ - Đóng góp với nhóm</h1></center>
-            <div id= "left_contact"></div>
+            <div id= "left_contact">
+            	<div id="map"></div>
+					<script>
+                      function initMap() {
+                        var mapDiv = document.getElementById('map');
+                        var map = new google.maps.Map(mapDiv, {
+                          center: {lat: 10.762648, lng: 106.682325},
+                          zoom: 20
+                        });
+                      }
+                    </script>
+            </div>
             <div id="right_contact">
-            	<center><h2>Thông tin bạn</h2>
-            	<form id="form_contac">
-                	<label>Tên của bạn:</label><input type="text" class="txt" placeholder="Tên của bạn"/><br />
-                    <label>Email:</label><input type="text" class="txt" placeholder="Emai"/>
-                    <label>Tiêu đề:</label><input type="text" class="txt" placeholder="Tiêu đề"/>
-                    <label>Nội dung:</label><textarea id="txtND"  >Nội dung
-                    	
-                    </textarea>
-                </form></center>
+            	<h2>Thông tin bạn</h2>
+            	<form id="form_contact">
+                		<input type="text" class="txt" placeholder="Tên của bạn"/>
+                        <input type="text" class="txt" placeholder="Emai"/></li>
+                        <input type="text" class="txt" placeholder="Tiêu đề"/></li>
+                        <textarea id="txtND" rows="4" cols="50" placeholder="Nội dung..."></textarea>
+                        <button class="btn"><h3>Gửi tin nhắn</h3></button>
+                </form>
             </div>
         </div>
     </div>
-
+	<div id="footer">
+    	
+    </div>
 </body>
 </html>
