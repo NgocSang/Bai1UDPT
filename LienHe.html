@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+    <link rel="shortcut icon"  type="image/x-icon" href="images/icon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website nhóm 2S</title>
+</head
+
+><body>
+	<div id="Banner">
+        <center><h1>Chào mừng bạn đã đến với website của nhóm 2S</h1></center>
+    </div>
+	<div id="Menu">
+    	<ul>
+       	<li class="Menu1"><a href="#"> Menu</a></li>
+        	<li>
+            	<img class="icon" src="images/home.png"/><a href="Source.html">Trang chủ</a>
+                
+            </li>
+            <li>
+            	<img class="icon" src="images/member.png"/>
+                    <a href="#">Thành viên</a>
+                    <img src="images/incon_menu.png"/>
+                    <ul class="MenuCap1">
+                        <li>
+                            <div>
+                                <img src="images/avtar_NS.png"/><a href="./members/1312485/1312485_NNS.html">Nguyễn Ngọc Sáng</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="images/avtar_ST.jpg"/><a href="./members/1312498/1312498_TTS.html">Trần Thị Sương</a>
+                            </div>
+                        </li>
+                    </ul>
+            </li>
+            <li>
+            	<img class="icon" src="images/study.png"/><a href="#">Bài tập</a>
+                <img src="images/incon_menu.png"/>
+                <ul class="MenuCap1">
+                        <li><a href="BanCo.html">Bàn cờ</a></li>
+                        <li><a href="BCK.html">Bảng cửu chương</a></li>
+                  </ul>
+            </li>
+            <li>
+            	<img class="icon" src="images/references.png"/><a href="#">Tài liệu</a>
+                <img src="images/incon_menu.png"/>
+            </li>
+            <li>
+            	<img class="icon" src="images/contact.jpg"/><a href="#">Liên Hệ</a>
+            </li>
+        </ul>
+        <button id="btnMenu" type="button"></button>
+    </div>
+    <img id="page1" src="images/Banner.jpg" alt="Banner"/>
+    <div id="NoiDung">
+    	<div id="Menuleft">
+        	<center><h3>DANH MỤC</h3></center>
+            <hr width="100%"/>
+        	<ul>
+            	<li><a href="./members/1312485/1312485_NNS.html">Nguyễn Ngọc Sáng</a></li>
+                <li><a href="./members/1312498/1312498_TTS.html">Trần Thị Sương</a></li>
+                <li><a href="BCK.html">Bảng cửu chương</a></li>
+                <li style="border:none;"><a href="BanCo.html">Bàn cờ</a></li>
+            </ul>
+        </div>
+        <div id = "ND">
+        	<center><h1>Liên hệ - Đóng góp với nhóm</h1></center>
+            <div id= "left_contact">
+            	<div id="map"></div>
+					<script>
+                      function initMap() {
+                        var mapDiv = document.getElementById('map');
+                        var map = new google.maps.Map(mapDiv, {
+                          center: {lat: 10.762648, lng: 106.682325},
+                          zoom: 20
+                        });
+                      }
+                    </script>
+            </div>
+            <div id="right_contact">
+            	<h2>Thông tin bạn</h2>
+            	<form id="form_contact">
+                		<input type="text" class="txt" placeholder="Tên của bạn"/>
+                        <input type="text" class="txt" placeholder="Emai"/></li>
+                        <input type="text" class="txt" placeholder="Tiêu đề"/></li>
+                        <textarea id="txtND" rows="4" cols="50" placeholder="Nội dung..."></textarea>
+                        <button class="btn"><h3>Gửi tin nhắn</h3></button>
+                </form>
+            </div>
+        </div>
+    </div>
+	<div id="footer">
+    	<center><h3><i>Copyright@</i>Nguyễn Ngọc Sáng - Trần Thị Sương - UDPT</h3></center>
+    </div>
+</body>
+</html>
