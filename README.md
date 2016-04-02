@@ -1,6 +1,6 @@
-﻿# BT-UDPT-1 - *Name of your app*
+﻿# BT-UDPT-1 - Trang web nhóm 2S
 
-Trang web nhóm 2s là một bài tập 1 tại môn UDPT.
+Trang web nhóm 2S là một bài tập 1 tại môn UDPT.
 
 Thành viên: 	1312485-Nguyễn Ngọc Sáng
 		1312498-Trần Thị Sương
