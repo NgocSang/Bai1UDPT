@@ -5,7 +5,7 @@ Trang web nhóm 2S là một bài tập 1 tại môn UDPT.
 Thành viên: 	1312485-Nguyễn Ngọc Sáng
 		1312498-Trần Thị Sương
 
-URL: **URL hosting của bài tập**
+URL: http://team2s.16mb.com/
 
 ## Yêu cầu
 
